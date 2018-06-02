@@ -57,7 +57,7 @@ a:hover {
 }
 
 .ui-white {
-    background: #67a042;
+    background: #29abe2;
     border: 1px solid white;
 }
 
@@ -85,7 +85,7 @@ a:hover {
 }
 
 .green-twig {
-    background: #67a042;
+    background: #29abe2;
     height: 650px;
 }
 
@@ -246,7 +246,7 @@ a:hover {
 
 /*ready to use section*/
 .readytouse {
-    background: #67a042;
+    background: #29abe2;
     text-align: center;
     padding: 5%;
 }
@@ -457,7 +457,7 @@ a:hover {
 .main-features {
     padding-bottom: 2%;
     padding-top: 40%;
-    background: #67a042;
+    background: #29abe2;
     position: relative;
     z-index: 1;
 }
