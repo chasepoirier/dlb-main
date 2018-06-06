@@ -455,6 +455,7 @@ a:hover {
 
 
 
+
 /* blue */
 
 
@@ -1297,7 +1298,6 @@ a:hover {
     box-shadow: 0px 0px 16px rgba(0, 0, 0, .2);
     margin-bottom: 35px;
     cursor: pointer;
-    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1312,9 +1312,9 @@ a:hover {
     position: relative;
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
-    overflow: hidden;
     width: 90%;
-    height: 90%;
+    height: 100%;
+    padding: 15px 0;
     display: flex;
     align-content: center;
     flex-wrap: wrap;
@@ -1498,6 +1498,15 @@ fieldset {
     .laptop .page-wrapper .content-container .column-left h1 {
         font-size: 30px;
     }
+
+    .plans-pricing .flexed {
+        flex-wrap: wrap;
+    }
+
+    .plan-wrapper {
+        width: calc(100% / 2 - 8px);
+        margin-bottom: 50px;
+    }
 }
 
 @media (max-width: 960px) {
@@ -1514,7 +1523,7 @@ fieldset {
     .content-header {
         font-size: 24px;
     }
-    
+
     .hello-feautures-img {
         object-fit: contain;
         width: 100%;
@@ -1595,7 +1604,8 @@ fieldset {
         margin: 25px 0;
     }
 
-    .ui-black, .ui-white {
+    .ui-black,
+    .ui-white {
         width: 100%;
         margin: 10px 0;
     }
@@ -1660,7 +1670,6 @@ fieldset {
 
     .mobile-links.clicked {
         transform: translateX(0);
-
     }
 
     .mobile-links #mobile-nav-links {
@@ -1689,5 +1698,26 @@ fieldset {
         font-size: 18px;
         background-color: #1376F8;
         border: none;
+    }
+
+
+    .partners-page .flex-container .resource {
+        width: 100%;
+    }
+
+    .partners-page .row {
+        flex-wrap: wrap;
+    }
+
+    .partners-page .row .hardware-container,
+    .partners-page .row .software-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .plan-wrapper {
+        width: calc(100% - 8px);
+        margin-bottom: 50px;
     }
 }
