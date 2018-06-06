@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>DroneLogbook - Simplifying Drone Operations</title>
+    <title>DroneLogbook Energy - Simplifying Industrial Drone Operations</title>
     <meta name="description" content="DroneLogbook Energy is the drone logbook solution for energy, customized to the needs of oil & gas, power generation & power distribution companies.">
     <meta name="author" content="DroneLogbook">
-
     <meta property="og:title" content="DroneLogbook Energy">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://image.ibb.co/cVGLSo/og_img.png">
@@ -24,7 +23,6 @@
     <meta property="og:site_name" content="DroneLogbook Energy">
     <meta name="twitter:image" content="https://image.ibb.co/cVGLSo/og_img.png">
     <meta name="twitter:site" content="@dronelogbook">
-
     <link rel="shortcut icon" href="favicon.ico">
     <!-- Mobile Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,14 +41,6 @@
                 <a href="index.html" class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
                 <img class="logo" src="img-min/logo/Logo-whiteText.png">
             </a>
-                <div class="navbar-header hidden-lg pull-right">
-                    <button type="button" class="modal_close" title="Close"><span class="modalspan"></span></button>
-                    <button type="button" class="modal_open" title="Open">
-                        <span class="modalopen"></span>
-                        <span class="modalopen"></span>
-                        <span class="modalopen"></span>
-                    </button>
-                </div>
                 <nav id="nav-links">
                     <a href="solutions.html" class="nav-link">Solutions</a>
                     <a href="features.html" class="nav-link">Features</a>
@@ -60,7 +50,21 @@
                     <a href="contact.html" class="nav-link">Contact Us </a>
                     <a href="#" class="nav-link signIn">Sign Up</a>
                 </nav>
+                <div onclick="toggleMobileNav(this)" class="mobile-nav-container">
+                    <div class="mobile-nav"></div>
+                </div>
             </div>
+        </div>
+        <div class="mobile-links">
+            <nav id="mobile-nav-links">
+                <a href="solutions.html" class="nav-link">Solutions</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="partners.html" class="nav-link">Partners</a>
+                <a href="faq.html" class="nav-link">FAQ </a>
+                <a href="contact.html" class="nav-link">Contact Us </a>
+                <a href="#" class="nav-link btn">Sign Up</a>
+            </nav>
         </div>
     </header>
     <section class="laptop">
@@ -79,8 +83,8 @@
                         <div class="item">Offline Operations</div>
                     </div>
                     <ul class="ui-buttons">
-                        <a href="#" class="ui-black">Try for Free</a>
-                        <a href="#" class="ui-white">How it works</a>
+                        <a href="pricing.html" class="ui-black">Try for Free</a>
+                        <a href="features.html" class="ui-white">How it works</a>
                     </ul>
                 </div>
                 <div class="column-right"><img src="img-min/macbook-dashboard.png"></div>
@@ -123,28 +127,33 @@
                     <div class="content-header">The DroneLogbook Advantage</div>
                     <div class="content-sub-header">With more supported file types than anyone else, DroneLogbook is the leader when it comes to automating flight logs across platforms.</div>
                     <div class="divider"></div>
-                    <div class="col-left module-img"><img src="img-min/home-module01.png"></div>
-                    <div class="col-right module-text">
-                        <h3>Compliance & Custom Reporting</h3>
-                        <p>The most important part of your commercial operations is making sure you stay compliant. DroneLogbook tracks all your operations to allow you to create reports in seconds. Generate compliance (FAA, CAA, CASA, CAD, EASA, DGAC, TBST) reports in seconds. Regulatory agencies require you to produce records on demand. In addition, we have a series of custom reports available to allow you to track pilots, flights, maintenance and more.
-                            <br>
-                            <br> DroneLogbook makes it that easy.</p>
+                    <div class="flex-container">
+                        <div class="module-img"><img src="img-min/home-module01.png"></div>
+                        <div class="module-text">
+                            <h3>Compliance & Custom Reporting</h3>
+                            <p>The most important part of your commercial operations is making sure you stay compliant. DroneLogbook tracks all your operations to allow you to create reports in seconds. Generate compliance (FAA, CAA, CASA, CAD, EASA, DGAC, TBST) reports in seconds. Regulatory agencies require you to produce records on demand. In addition, we have a series of custom reports available to allow you to track pilots, flights, maintenance and more.
+                                <br>
+                                <br> DroneLogbook makes it that easy.</p>
+                        </div>
                     </div>
-                    <div class="col-left module-text">
-                        <h3>Documentation</h3>
-                        <p>DroneLogbook provides a digital document library with custom checklists and risk assessment forms. In addition, you can upload hard copies of other forms if needed.
-                            <br>
-                            <br> Create documentation electronically (Authorization Forms, POA, etc) Attach pre and post flight documentation to flights. Track maintenance operations.
-                            <br>
-                            <br> Authorize flights and more..</p>
+                    <div class="flex-container reversed">
+                        <div class="module-text">
+                            <h3>Documentation</h3>
+                            <p>DroneLogbook provides a digital document library with custom checklists and risk assessment forms. In addition, you can upload hard copies of other forms if needed.
+                                <br>
+                                <br> Create documentation electronically (Authorization Forms, POA, etc) Attach pre and post flight documentation to flights. Track maintenance operations.
+                                <br>
+                                <br> Authorize flights and more..</p>
+                        </div>
+                        <div class="module-img"><img src="img-min/home-module02.png"></div>
                     </div>
-                    <div class="col-right module-img"><img src="img-min/home-module02.png"></div>
-                    <div class="col-left module-img"><img src="img-min/home-module03.png"></div>
-                    <div class="col-right module-text">
-                        <h3>Mission Planning & Operations Calendar</h3>
-                        <p>DroneLogbook allows you to plan missions, assign personnel and equipment and check airspace status in minutes. We also provide an operations calendar so you can view your past and future fights in a single screen, providing the information you need at your fingertips.</p>
+                    <div class="flex-container">
+                        <div class="module-img"><img src="img-min/home-module03.png"></div>
+                        <div class="module-text">
+                            <h3>Mission Planning & Operations Calendar</h3>
+                            <p>DroneLogbook allows you to plan missions, assign personnel and equipment and check airspace status in minutes. We also provide an operations calendar so you can view your past and future fights in a single screen, providing the information you need at your fingertips.</p>
+                        </div>
                     </div>
-
                     <div class="ui-buttons">
                         <a href="features.html" class="ui-black">View all features</a>
                     </div>
@@ -159,13 +168,13 @@
             <div class="divider"></div>
             <div class="partner-list">
                 <div class="image-container">
-                <img src="../img-min/drone%20hardware/flyability.png" alt="Flyability Logo">
+                    <img src="../img-min/drone%20hardware/flyability.png" alt="Flyability Logo">
                 </div>
                 <div class="image-container sense">
-                <img src="../img-min/drone%20hardware/Sensefly.png" alt="Sensefly Logo">
+                    <img src="../img-min/drone%20hardware/Sensefly.png" alt="Sensefly Logo">
                 </div>
                 <div class="image-container">
-                <img src="../img-min/drone%20hardware/yuneec.png" alt="Yuneec Logo">
+                    <img src="../img-min/drone%20hardware/yuneec.png" alt="Yuneec Logo">
                 </div>
             </div>
             <div class="ui-buttons">
@@ -182,7 +191,7 @@
                     <div class="content-header">Join Our Newsletter</div>
                     <div class="content-sub-header">Stay informed as we continue to move forward and build DroneLogbook.</div>
                     <div class="robly_field_group">
-                         <input type="text" name="FNAME" id="DATA1" class="required" autocapitalize="on" placeholder="First Name" autocorrect="off" value="">
+                        <input type="text" name="FNAME" id="DATA1" class="required" autocapitalize="on" placeholder="First Name" autocorrect="off" value="">
                         <input type="text" name="EMAIL" id="DATA0" class="required" autocapitalize="off" placeholder="Email Address" autocorrect="off" value="">
                     </div>
                     <input type="submit" class="ui-black" value="Subscribe" name="subscribe" class="button g-recaptcha" data-sitekey="6Ld9XlUUAAAAABcR5houwBXwlA_3STKsG2SzYCVw" data-callback="robly_recaptcha_callback" />
@@ -195,8 +204,8 @@
         <p class="content-sub-header">Create a free account</p>
         <div>
             <ul class="ui-buttons ui-footer">
-                <li><a href="#" class="ui-black">Get Started</a></li>
-                <li><a href="#" class="ui-white">Learn More</a></li>
+                <li><a href="pricing.html" class="ui-black">Get Started</a></li>
+                <li><a href="features.html" class="ui-white">Learn More</a></li>
             </ul>
         </div>
     </section>

@@ -1,17 +1,11 @@
-$(document).ready(function(){
+const mobileNavSidebar = document.querySelector('.mobile-links');
 
-	//Sasha
-    $(".modal_open").on("click touch", function() {
-        $(".modal_open").hide();
-        $("#toggle").show();
-        $(".modal_close").show();
-    });
-
-    $(".modal_close").on("click touch", function() {
-        $(".modal_open").show();
-        $("#toggle").hide();
-        $(".modal_close").hide();
-    });
-
-});
-
+function toggleMobileNav(icon) {
+    if(icon.classList.contains('clicked')) {
+        icon.classList.remove('clicked');
+        mobileNavSidebar.classList.remove('clicked');
+    } else {
+        icon.classList += ' clicked ';
+        mobileNavSidebar.classList += ' clicked ';
+    }
+}
