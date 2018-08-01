@@ -89,7 +89,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 10000000;
-  background-color: #29abe2;
+  background-color: #74C338;
   background-color: #333;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, .4);
 }
@@ -366,8 +366,12 @@ a:hover {
   color: #fff
 }
 
+.laptop .ui-black {
+  background: rgb(122, 207, 41)
+}
+
 .ui-white {
-  background: #1DA6EE;
+  background: #74C338;
   background-color: #444;
 }
 
@@ -418,7 +422,7 @@ a:hover {
   padding-top: 6px;
   color: #fff;
   border-radius: 20px;
-  background-color: #1376F8;
+  background-color: #74C338;
   text-transform: uppercase;
   display: inline-block;
 }
@@ -578,7 +582,7 @@ a:hover {
 .solution-type .content-container .solution-link {
   display: inline-block;
   color: #fff;
-  color: #1376F8;
+  color: #74C338;
   margin-bottom: 5px;
   /*margin-left: -2px;*/
   font-size: 14px;
@@ -794,7 +798,7 @@ a:hover {
 
 .footer {
   background: #222;
-  color: #3599b9;
+  color: #74C338;
   padding: 30px 0;
   text-align: center
 }
@@ -1254,7 +1258,7 @@ a:hover {
 }
 
 .solutions__link {
-  color: #3599b9
+  color: #74C338
 }
 
 .solutions__padding {
@@ -1284,8 +1288,17 @@ a:hover {
   transition: all .2s;
 }
 
+.solutions .flex-container .card-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  text-decoration: underline;
+  margin-top: -8px;
+  margin-bottom: 14px;
+}
+
 .partners-page .flex-container .resource:hover,
-.solutions .flex-container .resource:hover {
+.solutions .flex-container a.resource:hover {
   transform: translateY(-3px);
 }
 
@@ -1532,6 +1545,16 @@ fieldset {
   resize: none
 }
 
+.btn-container .ui-black {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.btn-container {
+  margin: 70px 0 125px;
+}
+
 #contact-submit {
   cursor: pointer;
   width: 50%;
@@ -1539,7 +1562,7 @@ fieldset {
   margin: 0 auto;
   border: 1px solid transparent;
   border-radius: 4px;
-  background: #1376F8;
+  background: #74C338;
   color: #FFF;
   padding: 10px;
   font-size: 15px;
