@@ -1281,7 +1281,6 @@ a:hover {
   border-radius: 4px;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, .2);
   margin-bottom: 35px;
-  cursor: pointer;
   display: flex;
   justify-content: center;
   /* align-items: center; */
@@ -1300,6 +1299,7 @@ a:hover {
 .partners-page .flex-container .resource:hover,
 .solutions .flex-container a.resource:hover {
   transform: translateY(-3px);
+  cursor: pointer;
 }
 
 .partners-page .flex-container .resource .card-container,
